@@ -6,6 +6,8 @@ public class Review {
     double rating;
     String review;
 
+    int userid;
+
     public Review () {
 
     }
