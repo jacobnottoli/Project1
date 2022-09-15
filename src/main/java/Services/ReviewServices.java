@@ -12,4 +12,13 @@ public class ReviewServices {
     }
 
     public List<Review> getAllReviews() {return rr.getAllReviews();}
+
+    public void addReview(String movietitle, double rating, String review) {
+        Review r = new Review(movietitle,rating,review);
+        rr.addReview(r);
+    }
+
+    public void deleteReview(String movietitle) {
+        rr.deleteReview(movietitle);
+    }
 }

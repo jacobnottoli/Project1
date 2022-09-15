@@ -6,6 +6,10 @@ public class Review {
     double rating;
     String review;
 
+    public Review () {
+
+    }
+
     public Review (String movietitle, double rating, String review) {
         this.movietitle = movietitle;
         this.rating = rating;

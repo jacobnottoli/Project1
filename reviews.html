@@ -2,8 +2,24 @@
 <html>
     <h1>Movie Review Webapp</h1>
     <body>
-        <button id = "reviewButton">See all Reviews</button>
+        <h2>Submit a new Review:</h2>
+        <label for="titleInput">Movie Title:</label>
+        <input id="titleInput" type = "text"><br><br>
+        <label for="ratingInput">Rating:</label>
+        <input id="ratingInput" type = "number"><br><br>
+        <label for="reviewInput">Review:</label>
+        <input id="reviewInput" type = "text"><br><br>
+        <button id = "addReviewButton">Submit Review</button><br><br>
+
+        <h2>See all reviews:</h2>
+        <button id = "reviewButton">See all Reviews</button><br><br>
         <span id="content"></span>
+
+        <h2>Delete a Review:</h2>
+        <label for="deleteReviewInput">Movie Title:</label>
+        <input id="deleteReviewInput" type = "text"><br><br>
+        <button id = "deleteReviewButton">Delete Review</button><br><br>
+
         <script src = "review.js"></script>
     </body>
 </html>
