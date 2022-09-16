@@ -10,6 +10,22 @@ public class UserRepository {
     public UserRepository() {
 
     }
+
+    public int loginUser(String username, String password) {
+        int id = 0;
+        try {
+            PreparedStatement ps = conn.prepareStatement("select id from users where username = ? and password = ?");
+            ps.setString(1, username);
+            ps.setString(2, password);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                id = rs.getInt("id");
+            }
+        } catch (SQLException e) {
+
+        }
+        return id;
+    }
     public void addUser(String username, String password) {
         int id = UserRepository.getNewUserId();
        try {

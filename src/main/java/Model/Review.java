@@ -12,15 +12,24 @@ public class Review {
 
     }
 
-    public Review (String movietitle, double rating, String review) {
+    public Review (String movietitle, double rating, String review, int userid) {
         this.movietitle = movietitle;
         this.rating = rating;
         this.review = review;
+        this.userid = userid;
     }
 
     @Override
     public String toString() {
         return movietitle + ": " + rating + ": " + review;
+    }
+
+    public int getUserid() {
+        return userid;
+    }
+
+    public void setUserid(int userid) {
+        this.userid = userid;
     }
 
     public String getMovietitle() {

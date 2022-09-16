@@ -17,10 +17,16 @@ if (deleteReviewButton) {
     deleteReviewButton.addEventListener("click", deleteReview);
 }
 
+console.log(location.hash.substring(4));
+
+//function to grab userid
+function getUserId() {
+    return location.hash.substring(4);
+}
 
 //function to retrieve reviews
 async function getAllReviews() {
-let response = await fetch("http://localhost:9001/reviews");
+let response = await fetch("http://localhost:9001/reviews/" + location.hash.substring(4));
 response = await response.json();
 loadAllReviews(response);
 }
@@ -33,11 +39,11 @@ function loadAllReviews(response) {
         let movieTitle = document.createElement("li");
         let rating = document.createElement("p");
         let review = document.createElement("p");
-        movieTitle.innerText = response[i].movietitle;
+        movieTitle.innerText = "Movie Title: " + response[i].movietitle;
         reviewList.appendChild(movieTitle);
-        rating.innerText = response[i].rating;
+        rating.innerText = "Rating: " + response[i].rating;
         reviewList.appendChild(rating);
-        review.innerText = response[i].review;
+        review.innerText = "Review: " + response[i].review;
         reviewList.appendChild(review);
     }
     content.appendChild(reviewList);
@@ -49,8 +55,8 @@ async function apiAddReview() {
         movietitle:titleInput.value,
         rating:ratingInput.value,
         review:reviewInput.value
-    }
-    let response = await fetch("http://localhost:9001/reviews", {
+    };
+    let response = await fetch("http://localhost:9001/reviews/" + location.hash.substring(4), {
         method:'POST',
         mode: 'cors',
         headers: {
@@ -62,7 +68,7 @@ async function apiAddReview() {
 
 //function to delete a review from database
 async function deleteReview() {
-    let response = await fetch ("http://localhost:9001/reviews/delete", {
+    let response = await fetch ("http://localhost:9001/reviews/delete/" + location.hash.substring(4), {
         method:'DELETE',
         mode: 'cors',
         headers: {
