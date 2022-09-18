@@ -5,32 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cd55fee-f169-4bbf-8736-b05c0b9851ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DAO/ReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DAO/ReviewRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DAO/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DAO/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Model/Review.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ReviewAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ReviewAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Services/ReviewServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Services/ReviewServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Services/UserServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Services/UserServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReviewAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReviewAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/ReviewServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/ReviewServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/ConnectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/ConnectionUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +52,10 @@
 }</component>
   <component name="RunManager">
     <configuration name="ReviewAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="dbusername" value="jacob367" />
+        <env name="dbpassword" value="P@SSWORD!23" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="ReviewAPI" />
       <module name="Project1.main" />
       <method v="2">
