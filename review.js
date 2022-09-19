@@ -1,23 +1,26 @@
 //establishing connectivity to html
-let reviewButton = document.getElementById("reviewButton");
 let addReviewButton = document.getElementById("addReviewButton");
 let deleteReviewButton = document.getElementById("deleteReviewButton");
 let titleInput = document.getElementById("titleInput");
 let ratingInput = document.getElementById("ratingInput");
 let reviewInput = document.getElementById("reviewInput");
 let deleteReviewInput = document.getElementById("deleteReviewInput");
+let logoutButton = document.getElementById("logoutButton");
+
 
 //establishing place to paste info
 let content = document.getElementById("content");
+let submitContent = document.getElementById("submitContent");
 
 //establish button functionality
-reviewButton.addEventListener("click", getAllReviews);
 addReviewButton.addEventListener("click", apiAddReview);
 if (deleteReviewButton) {
     deleteReviewButton.addEventListener("click", deleteReview);
 }
+logoutButton.addEventListener("click",logout);
 
-console.log(location.hash.substring(4));
+//Load reviews on webpage load
+getAllReviews();
 
 //function to grab userid
 function getUserId() {
@@ -64,6 +67,21 @@ async function apiAddReview() {
           },
         body:JSON.stringify(inputReview)
     });
+    response = response.text();
+    submitMessage(response);
+    getAllReviews();
+}
+
+//function to display submit review message
+
+function submitMessage(response) {
+    if (response == 0) {
+        submitContent.innerText = "Cannot submit review! A review of this movie already exists!";
+    } else if (response == 1) {
+        submitContent.innerText = "";
+    } else if (response == 2) {
+        submitContent.innerText = "Cannot submit review! Cannot review a movie without a title!";
+    }
 }
 
 //function to delete a review from database
@@ -76,4 +94,7 @@ async function deleteReview() {
           },
           body:deleteReviewInput.value
     });
+    getAllReviews();
 }
+
+function logout() {window.location = "login.html"}

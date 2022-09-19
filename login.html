@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <h1>Movie Review Webapp Login Page</h1>
+    
+    <h1>Movie Review Webapp Login</h1><br><br>
     <body>
-        <label for="usernameInput">Username:</label>
-        <input id="usernameInput" type = "text">
-        <label for="passwordInput">Password:</label>
-        <input id="passwordInput" type = "password"><br><br>
-        <button id = "loginButton">Login</button>
-        <button id = "registerButton">Register</button><br>
-        <span id="loginContent"></span>
-
+        <style>
+            .container {
+                height: 200px;
+                position: relative;
+            }
+            h1 {
+                text-align: center;
+                border:5px black;
+            }
+            p{
+                text-align: center;
+            }
+            div{
+                text-align: center;
+            }
+            body {
+                background-color: #36393f;
+                color: #d8d8d8;
+            }
+        </style>
+        <div class = "container">
+            <label for="usernameInput">Username:</label>
+            <input id="usernameInput" type = "text">
+            <label for="passwordInput">&nbsp&nbsp&nbsp&nbspPassword:</label>
+            <input id="passwordInput" type = "password"><br><br>
+            <button id = "loginButton">Login</button>
+            <button id = "registerButton">Register</button><br>
+            <span id="loginContent"></span>
+        </div>
         <script src = "login.js"></script>
     </body>
 </html>

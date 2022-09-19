@@ -7,8 +7,10 @@ import io.javalin.Javalin;
 import io.javalin.core.JavalinConfig;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 public class ReviewAPI {
+    
     public static void main(String[] args) {
         ReviewServices rs = new ReviewServices();
         UserServices us = new UserServices();
@@ -22,7 +24,7 @@ public class ReviewAPI {
         app.post("/reviews/{userid}", ctx -> {
             ObjectMapper om = new ObjectMapper();
             Review newreview = om.readValue(ctx.body(), Review.class);
-            rs.addReview(newreview.getMovietitle(),newreview.getRating(),newreview.getReview(),Integer.parseInt(ctx.pathParam("userid")));
+            ctx.json(rs.addReview(newreview.getMovietitle(),newreview.getRating(),newreview.getReview(),Integer.parseInt(ctx.pathParam("userid"))));
         });
 
         app.delete("/reviews/delete/{userid}", ctx -> {
@@ -32,7 +34,7 @@ public class ReviewAPI {
         app.post("/login/register", ctx -> {
             ObjectMapper om = new ObjectMapper();
             User newUser = om.readValue(ctx.body(), User.class);
-            us.addUser(newUser.getUsername(), newUser.getPassword());
+            ctx.json(us.addUser(newUser.getUsername(), newUser.getPassword()));
         });
 
         app.post("login/", ctx -> {

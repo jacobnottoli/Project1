@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float:left;
+            width:50%;
+            padding: 10px;
+        }
+        .row:after {
+            content:"";
+            display:table;
+            clear:both;
+        }
+        h1 {
+            text-align: center;
+            border:5px black;
+        }
+        div{
+            text-align: left;
+        }
+        body {
+            background-color: #36393f;
+            color: #d8d8d8;
+        }
+    </style>
     <h1>Movie Review Webapp</h1>
     <body>
-        <h2>Submit a new Review:</h2>
-        <label for="titleInput">Movie Title:</label>
-        <input id="titleInput" type = "text"><br><br>
-        <label for="ratingInput">Rating:</label>
-        <input id="ratingInput" type = "number"><br><br>
-        <label for="reviewInput">Review:</label>
-        <input id="reviewInput" type = "text"><br><br>
-        <button id = "addReviewButton">Submit Review</button><br><br>
-
-        <h2>See all reviews:</h2>
-        <button id = "reviewButton">See all Reviews</button><br><br>
-        <span id="content"></span>
-
-        <h2>Delete a Review:</h2>
-        <label for="deleteReviewInput">Movie Title:</label>
-        <input id="deleteReviewInput" type = "text"><br><br>
-        <button id = "deleteReviewButton">Delete Review</button><br><br>
-
+        <div class ="row">
+            <div class="column" style ="background-color: #36393f;">
+                <h2>Submit a new Review:</h2>
+                <label for="titleInput">Movie Title:</label>
+                <input id="titleInput" type = "text"><br><br>
+                <label for="ratingInput">Rating:</label>
+                <input id="ratingInput" type = "number" style = "width:50px"><br><br>
+                <label for="reviewInput">Review:</label>
+                <input id="reviewInput" type = "text" style ="width:500px"><br><br>
+                <button id = "addReviewButton">Submit Review</button>
+                <span id = "submitContent"></span><br><br><br><br>
+                <h2>Delete a Review:</h2>
+                <label for="deleteReviewInput">Movie Title:</label>
+                <input id="deleteReviewInput" type = "text"><br><br>
+                <button id = "deleteReviewButton">Delete Review</button><br><br><br><br><br><br><br><br><br><br>
+                <button id = "logoutButton">Logout</button>
+            </div>
+            <div class="column" style="background-color: #36393f;">
+                <h2>Your reviews:</h2>
+                <span id="content"></span>
+            </div>
+        </div>
         <script src = "review.js"></script>
     </body>
 </html>

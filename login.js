@@ -24,7 +24,8 @@ async function addUser() {
           },
         body:JSON.stringify(userInfo)
     });
-    loginFunc;
+    response = await response.text();
+    doRegister(response);
 }
 
 async function loginFunc() {
@@ -46,5 +47,15 @@ function doLogin(response) {
         loginContent.innerText = "Login Failed! Incorrect username and password!";
     } else {
         window.location = "reviews.html" + "#id=" + response; 
+    }
+}
+
+function doRegister(response) {
+    if (response == 0) {
+        loginContent.innerText = "Register failed! A user with that username already exists!";
+    } else if (response ==1) {
+        loginContent.innerText = "User registered!";
+    } else if (response ==2) {
+        loginContent.innerText = "Register failed! Username or password cannot be blank!";
     }
 }

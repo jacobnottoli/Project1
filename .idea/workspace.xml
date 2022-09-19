@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cd55fee-f169-4bbf-8736-b05c0b9851ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/ConnectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/ConnectionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/reviews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReviewAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReviewAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/ReviewServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/ReviewServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/UserServices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
